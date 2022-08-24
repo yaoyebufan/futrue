@@ -12,7 +12,7 @@ import java.util.List;
  */
 public interface UserDao {
     /**
-     * 返回所有Tuser表中的数据
+     * 返回所有用户表中的数据
      *
      * @param: null
      * @return: List<User>

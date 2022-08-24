@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * @author sunyue
- * @class Tuser
+ * @class UserDao
  * @description: 用户表访问接口
  * @date 2022/8/23 16:05
  */

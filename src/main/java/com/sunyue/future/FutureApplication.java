@@ -6,7 +6,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @author sunyue
-
  * @class FutureApplication
  * @description: 启动类
  * @date 2022/8/24 9:48

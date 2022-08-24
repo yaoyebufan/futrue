@@ -1,0 +1,42 @@
+spring:
+  thymeleaf:
+    # 开发时关闭缓存,不然没法看到实时页面
+    cache: false
+    # 用非严格的 HTML
+    mode: HTML
+    encoding: utf-8
+    servlet:
+      content-type: text/html
+  # 数据库连接使用druid缓冲池
+  datasource:
+    druid:
+      url: jdbc:mysql://localhost:3306/future?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: root
+      password: sunyue
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      test-on-borrow: true
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  # 文件上传功能
+  servlet:
+    multipart:
+      # 是否启用文件上传功能
+      enabled: true
+      # 指定文件写入磁盘后的阈值，默认为0
+      file-size-threshold: 0
+      # 指定上传文件大小， 默认1M
+      max-file-size: 50MB
+      # 指定multipart / form-data请求允许的最大大小， 默认10M
+      max-request-size: 100MB
+      # 是否在文件或参数访问时懒惰地解析多部分请求
+      resolve-lazily: false
+
+# mybatis配置
+mybatis:
+  type-aliases-package: com.sunyue.future.springboot.entity
+  mapper-locations: classpath:mapper/*.xml
+
+# 访问端口号
+server:
+  port: 8080

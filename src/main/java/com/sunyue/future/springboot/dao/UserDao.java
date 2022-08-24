@@ -13,8 +13,9 @@ import java.util.List;
 public interface UserDao {
     /**
      * 返回所有Tuser表中的数据
+     *
      * @param: null
-     * @return: List<Tuser>
+     * @return: List<User>
      * @author sunyue
      * @date: 2022/8/24 9:19
      */

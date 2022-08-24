@@ -13,6 +13,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @Controller
 public class UserController {
+    /**
+     * @class UserController
+     * @description: 主页跳转
+     * @author sunyue
+     * @date 2022/8/24 10:47
+     * @version 1.0
+     */
     @RequestMapping(path = {"", "index"}, method = RequestMethod.GET)
     private String index() {
         return "index";

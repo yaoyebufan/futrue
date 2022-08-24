@@ -1,10 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
     <title>主页</title>
 </head>
 <body>
-<h3>Hello World!</h3>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>name</th>
+        <th>password</th>
+    </tr>
+    <tr th:each="user:${userList}">
+        <td th:text="${user.id}"></td>
+        <td th:text="${user.name}"></td>
+        <td th:text="${user.password}"></td>
+    </tr>
+</table>
+<ul>
+    <li>
+        <a href="/page/0/10">首页</a>
+    </li>
+    <li>
+        <a href="">上一页</a>
+    </li>
+    <li th:each="index:${count}">
+        <a th:text="${index}" href=""></a>
+    </li>
+    <li>
+        <a href="">下一页</a>
+    </li>
+    <li>
+        <a href="">尾页</a>
+    </li>
+</ul>
 </body>
+<script type="text/javascript">
+
+</script>
 </html>

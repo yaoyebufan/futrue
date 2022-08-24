@@ -23,4 +23,14 @@
         from t_user
         where id = #{id}
     </delete>
+
+    <select id="pageList" resultType="User" parameterType="java.util.Map">
+        select *
+        from t_user limit #{pageNumber},#{pageSize};
+    </select>
+
+    <select id="count" resultType="java.lang.Integer">
+        select count(*)
+        from t_user;
+    </select>
 </mapper>

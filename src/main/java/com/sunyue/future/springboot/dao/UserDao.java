@@ -3,6 +3,7 @@ package com.sunyue.future.springboot.dao;
 import com.sunyue.future.springboot.entity.User;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author sunyue
@@ -50,4 +51,24 @@ public interface UserDao {
      * @date 2022/8/24 13:10
      */
     void delete(User user);
+
+    /**
+     * 分页数据
+     *
+     * @param: List<User>
+     * @return: Map<String, Integer>
+     * @author sunyue
+     * @date 2022/8/24 13:24
+     */
+    List<User> pageList(Map<String, Integer> map);
+
+    /**
+     * 查询总条数
+     *
+     * @param: null
+     * @return: Integer
+     * @author sunyue
+     * @date 2022/8/24 13:41
+     */
+    Integer count();
 }

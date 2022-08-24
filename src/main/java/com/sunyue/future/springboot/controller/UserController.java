@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
  * @author sunyue
- * @version 1.0
+
  * @class UserController
  * @description: 用户控制层
  * @date 2022/8/24 10:16
@@ -18,7 +18,7 @@ public class UserController {
      * @description: 主页跳转
      * @author sunyue
      * @date 2022/8/24 10:47
-     * @version 1.0
+
      */
     @RequestMapping(path = {"", "index"}, method = RequestMethod.GET)
     private String index() {

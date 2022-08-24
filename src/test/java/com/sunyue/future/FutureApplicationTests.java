@@ -10,7 +10,6 @@ import java.util.List;
 
 /**
  * @author sunyue
- * @version 1.0
  * @class FutureApplicationTests
  * @description: 测试类
  * @date 2022/8/24 9:50

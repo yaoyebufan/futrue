@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 /**
  * @author sunyue
- * @class Tuser
+ * @class User
  * @description: t_user表的实体类
  * @date 2022/8/24 9:35
  */

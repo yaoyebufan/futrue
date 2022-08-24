@@ -28,10 +28,21 @@ class FutureApplicationTests {
      */
     @Test
     void JDBCTest() {
+        //查询一条数据
         List<User> users = userDao.selectAll();
         for (User user : users) {
             System.out.println(user.getName());
         }
+        User user = new User();
+        user.setName("s1un");
+        user.setPassword("2123456");
+        user.setId("1");
+        //插入一条数据
+        userDao.insert(user);
+        //更新一条数据
+        userDao.update(user);
+        //删除一条数据
+        userDao.delete(user);
     }
 
 }

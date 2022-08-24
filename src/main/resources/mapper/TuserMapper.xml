@@ -5,4 +5,22 @@
         select *
         from t_user;
     </select>
+
+    <insert id="insert">
+        insert into t_user (name, password)
+        values (#{name}, #{password});
+    </insert>
+
+    <update id="update">
+        update t_user
+        set name     = #{name},
+            password = #{password}
+        where id = #{id}
+    </update>
+
+    <delete id="delete">
+        delete
+        from t_user
+        where id = #{id}
+    </delete>
 </mapper>

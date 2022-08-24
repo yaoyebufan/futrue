@@ -19,8 +19,15 @@ class FutureApplicationTests {
     @Autowired(required = false)
     private UserDao userDao;
 
+    /**
+     * @author sunyue
+     * @param: null
+     * @return: null
+     * @description: 数据库测试连接
+     * @date: 2022/8/24 10:57
+     */
     @Test
-    void contextLoads() {
+    void JDBCTest() {
         List<User> users = userDao.selectAll();
         for (User user : users) {
             System.out.println(user.getName());

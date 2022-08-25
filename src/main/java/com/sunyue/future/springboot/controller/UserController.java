@@ -18,7 +18,7 @@ import java.util.Map;
  * @author sunyue
  * @class UserController
  * @description 用户控制层
- * @date 2022/8/24 1016
+ * @date 2022/8/24 10:16
  */
 @Controller
 public class UserController {
@@ -30,7 +30,7 @@ public class UserController {
      * @return String
      * @author sunyue
      * @description 主页跳转
-     * @date 2022/8/24 1103
+     * @date 2022/8/24 11:03
      */
     @RequestMapping(path = {"", "index"}, method = RequestMethod.GET)
     public String index(Model model) {
@@ -51,7 +51,7 @@ public class UserController {
      * @return String
      * @author sunyue
      * @description 分页跳转
-     * @date 2022/8/24 1103
+     * @date 2022/8/24 11:03
      */
     @ResponseBody
     @RequestMapping(path = "page/{pageNumber}/{pageSize}", method = RequestMethod.GET)

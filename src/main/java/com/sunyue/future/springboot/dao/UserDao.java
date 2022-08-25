@@ -18,7 +18,7 @@ public interface UserDao {
      * @param
      * @return List<User>
      * @author sunyue
-     * @date 2022/8/24 919
+     * @date 2022/8/24 9:19
      */
     List<User> selectAll();
 
@@ -28,7 +28,7 @@ public interface UserDao {
      * @param user
      * @return null
      * @author sunyue
-     * @date 2022/8/24 1125
+     * @date 2022/8/24 11:25
      */
     void insert(User user);
 
@@ -38,7 +38,7 @@ public interface UserDao {
      * @param user
      * @return null
      * @author sunyue
-     * @date 2022/8/24 1200
+     * @date 2022/8/24 12:00
      */
     void update(User user);
 
@@ -48,7 +48,7 @@ public interface UserDao {
      * @param user
      * @return null
      * @author sunyue
-     * @date 2022/8/24 1310
+     * @date 2022/8/24 13:10
      */
     void delete(User user);
 
@@ -58,7 +58,7 @@ public interface UserDao {
      * @param map
      * @return Map<String, Integer>
      * @author sunyue
-     * @date 2022/8/24 1324
+     * @date 2022/8/24 13:24
      */
     List<User> pageList(Map<String, Integer> map);
 
@@ -68,7 +68,7 @@ public interface UserDao {
      * @param
      * @return Integer
      * @author sunyue
-     * @date 2022/8/24 1341
+     * @date 2022/8/24 13:41
      */
     Integer count();
 }

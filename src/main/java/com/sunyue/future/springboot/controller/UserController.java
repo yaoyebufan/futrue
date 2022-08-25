@@ -26,15 +26,15 @@ public class UserController {
     public UserService userService;
 
     /**
+     * @param model
+     * @return String
      * @author sunyue
-     * @param: null
-     * @return: String
-     * @description: 主页跳转
-     * @date: 2022/8/24 11:03
+     * @description 主页跳转
+     * @date 2022/8/24 11:03
      */
     @RequestMapping(path = {"", "index"}, method = RequestMethod.GET)
     public String index(Model model) {
-        Map<String, Integer> params = new HashMap<>();
+        Map<String, Integer> params = new HashMap<>(16);
         params.put("pageNumber", 0);
         params.put("pageSize", 10);
         model.addAttribute("userList", userService.pageUserList(params));
@@ -47,16 +47,16 @@ public class UserController {
     }
 
     /**
+     * @param pageNumber pageSize
+     * @return String
      * @author sunyue
-     * @param: null
-     * @return: String
-     * @description: 分页跳转
-     * @date: 2022/8/24 11:03
+     * @description 分页跳转
+     * @date 2022/8/24 11:03
      */
     @ResponseBody
     @RequestMapping(path = "page/{pageNumber}/{pageSize}", method = RequestMethod.GET)
     public List<User> page(@PathVariable("pageNumber") Integer pageNumber, @PathVariable("pageSize") Integer pageSize) {
-        Map<String, Integer> params = new HashMap<>();
+        Map<String, Integer> params = new HashMap<>(16);
         params.put("pageNumber", pageNumber);
         params.put("pageSize", pageSize);
         return userService.pageUserList(params);

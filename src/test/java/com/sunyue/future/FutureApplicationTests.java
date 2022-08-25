@@ -14,7 +14,7 @@ import java.util.Map;
 /**
  * @author sunyue
  * @class FutureApplicationTests
- * @description: 测试类
+ * @description 测试类
  * @date 2022/8/24 9:50
  */
 @SpringBootTest
@@ -26,11 +26,11 @@ class FutureApplicationTests {
     private UserService userService;
 
     /**
+     * @param
+     * @return null
      * @author sunyue
-     * @param: null
-     * @return: null
-     * @description: 数据库测试连接
-     * @date: 2022/8/24 10:57
+     * @description 数据库测试连接
+     * @date 2022/8/24 10:57
      */
     @Test
     void JDBCTest() {

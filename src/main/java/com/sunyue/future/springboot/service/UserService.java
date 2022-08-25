@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * @author sunyue
  * @class UserService
- * @description: 用户业务接口
+ * @description 用户业务接口
  * @date 2022/8/24 13:52
  */
 @Service
@@ -17,18 +17,18 @@ public interface UserService {
     /**
      * 返回所有用户表中的数据
      *
-     * @param: null
-     * @return: List<User>
+     * @param
+     * @return List<User>
      * @author sunyue
-     * @date: 2022/8/24 13:56
+     * @date 2022/8/24 13:56
      */
     List<User> findAllUsers();
 
     /**
      * 插入一条数据
      *
-     * @param: User
-     * @return: null
+     * @param user
+     * @return null
      * @author sunyue
      * @date 2022/8/24 13:57
      */
@@ -37,18 +37,18 @@ public interface UserService {
     /**
      * 删除一条数据
      *
-     * @param: User
-     * @return: null
+     * @param user
+     * @return null
      * @author sunyue
-     * @date: 2022/8/24 13:57
+     * @date 2022/8/24 13:57
      */
     void deleteUser(User user);
 
     /**
      * 更新一条数据
      *
-     * @param: User
-     * @return: null
+     * @param user
+     * @return null
      * @author sunyue
      * @date 2022/8/24 13:58
      */
@@ -57,20 +57,20 @@ public interface UserService {
     /**
      * 查询总条数
      *
-     * @param: null
-     * @return: Integer
+     * @param
+     * @return Integer
      * @author sunyue
-     * @date: 2022/8/24 13:58
+     * @date 2022/8/24 13:58
      */
     Integer count();
 
     /**
      * 分页数据
      *
-     * @param: List<User>
-     * @return: Map<String, Integer>
+     * @param map
+     * @return Map<String, Integer>
      * @author sunyue
-     * @date: 2022/8/24 13:59
+     * @date 2022/8/24 13:59
      */
     List<User> pageUserList(Map<String, Integer> map);
 }

@@ -25,8 +25,8 @@ public interface UserDao {
     /**
      * 插入一条数据
      *
-     * @param: User
-     * @return: null
+     * @param user
+     * @return null
      * @author sunyue
      * @date 2022/8/24 11:25
      */
@@ -35,8 +35,8 @@ public interface UserDao {
     /**
      * 更新一条数据
      *
-     * @param: User
-     * @return: null
+     * @param user
+     * @return null
      * @author sunyue
      * @date 2022/8/24 12:00
      */
@@ -45,8 +45,8 @@ public interface UserDao {
     /**
      * 删除一条数据
      *
-     * @param: User
-     * @return: null
+     * @param user
+     * @return null
      * @author sunyue
      * @date 2022/8/24 13:10
      */
@@ -55,8 +55,8 @@ public interface UserDao {
     /**
      * 分页数据
      *
-     * @param: List<User>
-     * @return: Map<String, Integer>
+     * @param map
+     * @return Map<String, Integer>
      * @author sunyue
      * @date 2022/8/24 13:24
      */
@@ -65,8 +65,8 @@ public interface UserDao {
     /**
      * 查询总条数
      *
-     * @param: null
-     * @return: Integer
+     * @param
+     * @return Integer
      * @author sunyue
      * @date 2022/8/24 13:41
      */

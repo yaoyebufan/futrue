@@ -1,4 +1,4 @@
-package com.sunyue.future.springboot.service.Impl;
+package com.sunyue.future.springboot.service.impl;
 
 import com.sunyue.future.springboot.dao.UserDao;
 import com.sunyue.future.springboot.entity.User;
@@ -12,7 +12,7 @@ import java.util.Map;
 /**
  * @author sunyue
  * @class UserServiceImpl
- * @description: 用户业务实现
+ * @description 用户业务实现
  * @date 2022/8/24 13:52
  */
 @Service
